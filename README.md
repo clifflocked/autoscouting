@@ -10,11 +10,12 @@ uv venv .venv
 source .venv/bin/activate
 uv pip install inference supervision numpy dotenv
 ```
-2. For GPU support, install inference-gpu as well:
+2. For GPU support, install inference-gpu instead:
 ```sh
 uv pip install inference-gpu
 ```
-3. Run `track.py`
+3. Copy `.sampleenv` to `.env` and put in your roboflow API key
+4. Run `track.py`
 ```sh
 python3 track.py video.mp4
 ```
