@@ -8,9 +8,13 @@ The main setup is intended to be run on a machine running Lambda stack.
 curl -LsSf https://astral.sh/uv/install.sh | sh
 uv venv .venv
 source .venv/bin/activate
-uv pip install inference supervision numpy torch
+uv pip install inference supervision numpy dotenv
 ```
-2. Run `track.py`
+2. For GPU support, install inference-gpu as well:
+```sh
+uv pip install inference-gpu
+```
+3. Run `track.py`
 ```sh
 python3 track.py video.mp4
 ```
